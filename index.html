@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture Web UI — Skandinaviya Uslubidagi Yog'och Mebellar</title>
+  <meta name="description" content="Tabiiy yog'och san'ati va minimalist mebellar bilan xonadoningizda iliq va zamonaviy Skandinaviya muhitini yarating — Furniture Web UI (40-Amaliy Ish).">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="figma_preview.png">
+</head>
+<body>
+
+  <!-- SAYT SARLAVHASI (HEADER) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 9l3 1v4l-3 1 9 7 9-7-3-1v-4l3-1-9-7z"/><path d="M12 12v10"/></svg>
+        </div>
+        <span>WoodArt</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Bosh sahifa</a></li>
+        <li><a href="#differents" class="nav-link">Mahsulotlar</a></li>
+        <li><a href="#private" class="nav-link">Biz haqimizda</a></li>
+        <li><a href="#rooms" class="nav-link">Xonalar</a></li>
+        <li><a href="#footer" class="nav-link">Aloqa</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <button class="menu-burger" aria-label="Menyu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO BO'LIMI -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-box">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Xonangizni Bizning Yog'och San'atimiz Bilan Boyiting
+            </h1>
+            <p class="hero-desc">
+              Har bir xonadonga iliqlik, sokinlik va tabiiy go'zallik baxsh etuvchi 100% tabiiy massiv yog'ochdan yasalgan eksklyuziv mebellar.
+            </p>
+            <a href="#rooms" class="btn-olive">Mahsulotlarni ko'rish</a>
+          </div>
+
+          <div class="hero-media">
+            <img src="assets/hero-furniture.jpg" alt="Zamonaviy yog'och mebel">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- XONANGIZ O'ZGACHA BO'LADI (3 BULLETS) -->
+    <section id="differents" class="differents-section">
+      <div class="container differents-grid">
+        <div>
+          <h2 class="section-bold-title">
+            Xonangiz Boshqalarnikidan Butunlay Ajralib Turadi
+          </h2>
+        </div>
+
+        <div class="bullets-list">
+          <div class="bullet-item">
+            <div class="bullet-dot">✓</div>
+            <div>
+              <h4>100% Tabiiy Eman & Yong'oq</h4>
+              <p>Biz faqat barqaror o'rmon xo'jaliklaridan keltirilgan qattiq yog'och turlaridan foydalanamiz.</p>
+            </div>
+          </div>
+
+          <div class="bullet-item">
+            <div class="bullet-dot">✓</div>
+            <div>
+              <h4>Ekologik Xavfsiz Tabiiy Moylar</h4>
+              <p>Hech qanday zaharli kimyoviy laklarsiz, faqat tabiiy asal mumi va o'simlik moylari bilan ishlov beriladi.</p>
+            </div>
+          </div>
+
+          <div class="bullet-item">
+            <div class="bullet-dot">✓</div>
+            <div>
+              <h4>Usta Qo'l Mehnati & Chidamlilik</h4>
+              <p>Har bir buyum avloddan-avlodga o'tuvchi mustahkam an'anaviy yog'och ulanmalari bilan yasaladi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAXSIY INTERYER TANLOVI (BANNER) -->
+    <section id="private" class="private-section">
+      <div class="container">
+        <div class="private-banner">
+          <div class="private-media">
+            <img src="assets/private-interior.jpg" alt="Shaxsiy interyer loyihasi">
+          </div>
+
+          <div class="private-content">
+            <h2 class="private-title">Shaxsiy Interyeringizni O'zingiz Tanlang</h2>
+            <p class="private-desc">
+              Biz sizning xonangizning aniq o'lchamlari va dizayniga moslashtirilgan individual mebel buyurtmalarini ham qabul qilamiz.
+            </p>
+            <a href="#rooms" class="btn-white">Batafsil ma'lumot</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O'ZINGIZNIKIDEK QUYASH MUHIT (SHOWCASE) -->
+    <section class="living-section">
+      <div class="container living-grid">
+        <div class="living-large-media">
+          <img src="assets/living-showcase.jpg" alt="Mehmonxona mebel to'plami">
+        </div>
+
+        <div>
+          <h2 class="section-bold-title" style="margin-bottom: 24px;">
+            Yashash Joyingiz Xuddi Siznikidek Qulay
+          </h2>
+          <p style="color: var(--color-text-muted); font-size: 1.05rem; margin-bottom: 32px;">
+            Minimalistik estetikaga ega divanlar, jurnalli stollar va qulay yog'och stullar xonadonning har bir metrini shinam qiladi.
+          </p>
+
+          <div class="living-cards-stack">
+            <div class="living-mini-card">
+              <img src="assets/chair-wood.jpg" alt="Kreslo">
+              <div>
+                <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 4px;">Skandinaviya Kreslosi</h4>
+                <p style="color: var(--color-text-muted); font-size: 0.85rem;">Tabiiy zig'ir matosi va oq eman ramka.</p>
+              </div>
+            </div>
+
+            <div class="living-mini-card">
+              <img src="assets/table-wood.jpg" alt="Stol">
+              <div>
+                <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 4px;">Kofe Stoli</h4>
+                <p style="color: var(--color-text-muted); font-size: 0.85rem;">Monolit yog'och yuza va nafis geometrik oyoqlar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORZUINGIZDAGI XONANI TOPING (4 ROOM TILES) -->
+    <section id="rooms" class="dream-section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 48px;">
+          <h2 class="section-bold-title" style="margin-bottom: 12px;">
+            Orzuingizdagi Xonani Hoziroq Tanlang
+          </h2>
+          <p style="color: var(--color-text-muted);">Xona turini tanlang va unga moslangan mebel to'plamlarini ko'ring.</p>
+        </div>
+
+        <div class="dream-grid">
+          <!-- LIVING -->
+          <div class="room-tile" data-room="Mehmonxona">
+            <div class="tile-media">
+              <img src="assets/room-living.jpg" alt="Mehmonxona">
+            </div>
+            <div class="tile-title">Mehmonxona (Living)</div>
+          </div>
+
+          <!-- BED -->
+          <div class="room-tile" data-room="Yotoqxona">
+            <div class="tile-media">
+              <img src="assets/room-bed.jpg" alt="Yotoqxona">
+            </div>
+            <div class="tile-title">Yotoqxona (Bed)</div>
+          </div>
+
+          <!-- TERRACE -->
+          <div class="room-tile" data-room="Terassa">
+            <div class="tile-media">
+              <img src="assets/room-terrace.jpg" alt="Terassa">
+            </div>
+            <div class="tile-title">Terassa (Terrace)</div>
+          </div>
+
+          <!-- KITCHEN -->
+          <div class="room-tile" data-room="Oshxona">
+            <div class="tile-media">
+              <img src="assets/room-kitchen.jpg" alt="Oshxona">
+            </div>
+            <div class="tile-title">Oshxona (Kitchen)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FUTER (FOOTER) -->
+  <footer id="footer" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <span>WoodArt</span>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem; max-width: 320px;">
+            Tabiiy yog'och san'ati va zamonaviy interyer mebellari ishlab chiqaruvchisi.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Mahsulotlar</h5>
+          <ul class="footer-links">
+            <li><a href="#rooms">Stullar & Kreslolar</a></li>
+            <li><a href="#rooms">Stollar & Konsollar</a></li>
+            <li><a href="#rooms">Shkaflar & Tokchalar</a></li>
+            <li><a href="#rooms">Yotoq mebellari</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Kompaniya</h5>
+          <ul class="footer-links">
+            <li><a href="#private">Biz haqimizda</a></li>
+            <li><a href="#differents">Materiallar sifati</a></li>
+            <li><a href="#rooms">Xonalar katalogi</a></li>
+            <li><a href="#footer">Bog'lanish</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Bizga Qo'shiling (Join Us)</h5>
+          <p style="color: var(--color-text-muted); font-size: 0.9rem;">
+            Yangi mebel kolleksiyalari va 10% chegirmali vaucherga ega bo'ling.
+          </p>
+          <form id="furnitureJoinForm" class="join-form">
+            <input type="email" placeholder="Emailingiz..." required>
+            <button type="submit">→</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 WoodArt Furniture UI. Barcha huquqlar himoyalangan. 40-Amaliy Ish.</div>
+        <div>Figma Dizayni: <a href="https://www.figma.com/file/cvqApImIaJbfiim3ttN4Jh/Furniture-Web-UI?node-id=209:186" target="_blank" rel="noopener" style="color: var(--color-primary); text-decoration: underline;">Furniture-Web-UI (node-id: 209:186)</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

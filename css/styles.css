@@ -1,0 +1,536 @@
+/* ==========================================================================
+   FURNITURE WEB UI — 40-Amaliy Ish — Stylesheet
+   Scandinavian Wood Art & Contemporary Interior Furniture Platform
+   ========================================================================== */
+
+:root {
+  --color-primary: #3b5323; /* Olive/Forest Green */
+  --color-primary-dark: #283918;
+  --color-primary-light: #f1f4ed;
+  --color-bg: #f9faf7;
+  --color-surface: #ffffff;
+  --color-text: #1f291e;
+  --color-text-muted: #6b7768;
+  --color-border: #e2e6de;
+  --color-banner-green: #344c20;
+  
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: 'Outfit', var(--font-family);
+  
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 12px 30px rgba(52, 76, 32, 0.08);
+  --transition: all 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --color-bg: #121611;
+  --color-surface: #1a2019;
+  --color-text: #f0f4ee;
+  --color-text-muted: #95a392;
+  --color-border: #2d362a;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(249, 250, 247, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-primary);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-burger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+.hero-section {
+  padding: 40px 0 80px;
+}
+
+.hero-box {
+  background: var(--color-primary-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero-content {
+  padding: 64px 56px;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  margin-bottom: 36px;
+  max-width: 440px;
+}
+
+.btn-olive {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-olive:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.hero-media {
+  height: 520px;
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   YOUR ROOM STAND DIFFERENTS (3 BULLETS)
+   ========================================================================== */
+.differents-section {
+  padding: 80px 0;
+}
+
+.differents-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.section-bold-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.bullets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.bullet-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.bullet-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.bullet-item h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.bullet-item p {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   CHOOSE YOUR INTERIOR PRIVATELY (DARK GREEN BANNER)
+   ========================================================================== */
+.private-section {
+  padding: 40px 0;
+}
+
+.private-banner {
+  background: var(--color-banner-green);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+}
+
+.private-media {
+  height: 380px;
+}
+
+.private-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.private-content {
+  padding: 56px 48px;
+}
+
+.private-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.private-desc {
+  color: #d6e2cf;
+  font-size: 1.05rem;
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: var(--color-primary);
+  padding: 12px 30px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition);
+}
+
+.btn-white:hover {
+  background: #f1f4ed;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   LIVING THE ROOM LIKE YOURS (SHOWCASE)
+   ========================================================================== */
+.living-section {
+  padding: 96px 0;
+}
+
+.living-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.living-large-media {
+  height: 520px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.living-large-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.living-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.living-mini-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.living-mini-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+/* ==========================================================================
+   FIND YOUR DREAM ROOM RIGHT NOW (4 TILES)
+   ========================================================================== */
+.dream-section {
+  padding: 80px 0;
+}
+
+.dream-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.room-tile {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  text-align: center;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.room-tile:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.tile-media {
+  height: 220px;
+  overflow: hidden;
+}
+
+.tile-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.room-tile:hover .tile-media img {
+  transform: scale(1.08);
+}
+
+.tile-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 16px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+  background: #ffffff;
+  border-top: 1px solid var(--color-border);
+  padding: 80px 0 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+.footer-col h5 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
+}
+
+.join-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.join-form input {
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  flex-grow: 1;
+  outline: none;
+}
+
+.join-form button {
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0 20px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--color-border);
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-box,
+  .differents-grid,
+  .private-banner,
+  .living-grid {
+    grid-template-columns: 1fr;
+  }
+  .dream-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .dream-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
