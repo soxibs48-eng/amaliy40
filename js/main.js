@@ -29,3 +29,4 @@ function initJoinForm() {
     form.reset();
   });
 }
+

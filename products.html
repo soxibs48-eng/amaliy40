@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mebellar Katalogi — WoodArt Furniture</title>
+  <meta name="description" content="WoodArt yog'och mebellar katalogi: stullar, stollar, shkaflar va yotoqxona mebellari to'plami.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="figma_preview.png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 9l3 1v4l-3 1 9 7 9-7-3-1v-4l3-1-9-7z"/><path d="M12 12v10"/></svg>
+        </div>
+        <span>WoodArt</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Bosh sahifa</a></li>
+        <li><a href="products.html" class="nav-link active">Mahsulotlar</a></li>
+        <li><a href="about.html" class="nav-link">Biz haqimizda</a></li>
+        <li><a href="contact.html" class="nav-link">Aloqa</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-olive" style="padding: 10px 22px; font-size: 0.9rem;">Buyurtma berish</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE TITLE -->
+    <section style="background: var(--color-primary-light); padding: 60px 0; border-bottom: 1px solid var(--color-border);">
+      <div class="container text-center">
+        <h1 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; color: var(--color-text); margin-bottom: 12px;">Mebellar Kolleksiyasi</h1>
+        <p style="color: var(--color-text-muted); max-width: 650px; margin: 0 auto; font-size: 1.1rem;">
+          Skandinaviya minimalizmi va tabiiy massiv yog'ochning betakror iliqligi.
+        </p>
+      </div>
+    </section>
+
+    <!-- CATALOG GRID -->
+    <section style="padding: 60px 0 90px;">
+      <div class="container">
+        <div class="rooms-grid">
+          
+          <!-- PRODUCT 1 -->
+          <div class="room-card">
+            <div class="room-img-wrap">
+              <img src="assets/room-chair.jpg" alt="Skandinav Yog'och Kreslosi">
+              <span class="room-tag">Mehmonxona</span>
+            </div>
+            <div class="room-info">
+              <h3 class="room-title">Nordic Lounge Kreslosi</h3>
+              <p class="room-desc">Qattiq eman yog'ochi va tabiiy zig'ir matoli yostiqlar. Uzoq mutolaa va hordiq uchun qulay.</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+                <span style="font-size: 1.3rem; font-weight: 800; color: var(--color-primary);">$180.00</span>
+                <button class="btn-olive" onclick="alert('Nordic Lounge kreslosi buyurtmaga qo\'shildi!')" style="padding: 8px 18px; font-size: 0.9rem;">Tanlash</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 2 -->
+          <div class="room-card">
+            <div class="room-img-wrap">
+              <img src="assets/room-living.jpg" alt="Massiv Ovqatlanish Stoli">
+              <span class="room-tag">Oshxona</span>
+            </div>
+            <div class="room-info">
+              <h3 class="room-title">Massiv Yong'oq Ovqatlanish Stoli</h3>
+              <p class="room-desc">Tabiiy chetlari saqlangan yaxlit yong'oq yog'ochi va metall karkas. 6-8 kishilik oilaviy dasturxon.</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+                <span style="font-size: 1.3rem; font-weight: 800; color: var(--color-primary);">$450.00</span>
+                <button class="btn-olive" onclick="alert('Massiv Stol tanlandi!')" style="padding: 8px 18px; font-size: 0.9rem;">Tanlash</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 3 -->
+          <div class="room-card">
+            <div class="room-img-wrap">
+              <img src="assets/room-bed.jpg" alt="Minimalist Yotoq Karavoti">
+              <span class="room-tag">Yotoqxona</span>
+            </div>
+            <div class="room-info">
+              <h3 class="room-title">Serenity Yotoqxona Karavoti</h3>
+              <p class="room-desc">Tabiiy eman daraxti, ortopedik panjaralar va qulay bosh suyagich bilan uyg'unlashgan xavfsiz konstruksiya.</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+                <span style="font-size: 1.3rem; font-weight: 800; color: var(--color-primary);">$680.00</span>
+                <button class="btn-olive" onclick="alert('Serenity Karavot tanlandi!')" style="padding: 8px 18px; font-size: 0.9rem;">Tanlash</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 4 -->
+          <div class="room-card">
+            <div class="room-img-wrap">
+              <img src="assets/room-office.jpg" alt="Ergonomik Ish Stoli">
+              <span class="room-tag">Ish Xonasi</span>
+            </div>
+            <div class="room-info">
+              <h3 class="room-title">Craftsman Ish Stoli</h3>
+              <p class="room-desc">Noutbuk, hujjatlar va simlarni yashirish uchun maxsus qutilar bilan jihozlangan mustahkam stol.</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+                <span style="font-size: 1.3rem; font-weight: 800; color: var(--color-primary);">$390.00</span>
+                <button class="btn-olive" onclick="alert('Craftsman Ish Stoli tanlandi!')" style="padding: 8px 18px; font-size: 0.9rem;">Tanlash</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOM MEASUREMENT BANNER -->
+    <section style="background: var(--color-banner-green); color: white; padding: 60px 0;">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
+        <div>
+          <h2 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 8px;">Xonangizga mos maxsus o'lchamdagi mebel kerakmi?</h2>
+          <p style="color: #d1dcce; font-size: 1.05rem;">Usta-dizaynerimiz bepul tashrif buyurib, o'lchov oladi va 3D eskiz tayyorlab beradi.</p>
+        </div>
+        <a href="contact.html" class="btn-olive" style="background: white; color: var(--color-primary); padding: 14px 32px; font-size: 1rem;">O'lchovga Buyurtma Berish</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <span>WoodArt</span>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem; max-width: 320px;">
+            Tabiiy yog'och san'ati va zamonaviy interyer mebellari ishlab chiqaruvchisi.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Sahifalar</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="products.html">Mahsulotlar</a></li>
+            <li><a href="about.html">Biz haqimizda</a></li>
+            <li><a href="contact.html">Aloqa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Aloqa</h5>
+          <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.8;">
+            Tel: +998 (71) 200-44-88<br>
+            Email: info@woodart.uz<br>
+            Toshkent sh., Parkent ko'chasi, 180
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Bizga Qo'shiling</h5>
+          <p style="color: var(--color-text-muted); font-size: 0.9rem;">
+            Yangi mebel kolleksiyalari va 10% chegirmali vaucherga ega bo'ling.
+          </p>
+          <form id="furnitureJoinForm" class="join-form">
+            <input type="email" placeholder="Emailingiz..." required>
+            <button type="submit">→</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 WoodArt Furniture UI. Barcha huquqlar himoyalangan. 40-Amaliy Ish.</div>
+        <div>Figma Dizayni: <a href="https://www.figma.com/file/cvqApImIaJbfiim3ttN4Jh/Furniture-Web-UI?node-id=209:186" target="_blank" rel="noopener" style="color: var(--color-primary); text-decoration: underline;">Furniture-Web-UI (node-id: 209:186)</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

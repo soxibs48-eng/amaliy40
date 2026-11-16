@@ -71,3 +71,4 @@ Ushbu loyiha Figma platformasidagi **Furniture Web UI (Combining Your Room With 
   - `initDreamRooms()` — Xonalar bo'yicha katalog filtri.
   - `initJoinForm()` — Obuna va vaucher integratsiyasi.
 - **Vercel**: `vercel.json` orqali toza URL manzillari bilan global joylashtirishga tayyor.
+
